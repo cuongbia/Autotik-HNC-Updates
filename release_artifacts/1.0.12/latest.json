@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.12",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.12/Autotik_HNC-1.0.12.exe",
+    "sha256": "749a25fdc28bf120bbd5de9bb190e589e8027d04a22d93610dbdb19e91d6d725",
+    "size": 177337023,
+    "data_schema": 1,
+    "notes": "Sửa quét thông tin tự động 60 phút, thử lại khi lỗi và chống quét trùng; thêm chọn 50 video theo lượt xem, gần nhất, ngẫu nhiên hoặc nhiều tim; bảo vệ ô Tên/TikTok ID và bỏ qua Tên bị khóa; đánh số profile hàng loạt tránh trùng. Giữ dữ liệu và license; bản khách không có Telegram/Kick Stu.",
+    "released_at": "2026-11-25T03:49:18+00:00"
+  },
+  "signature": "LOACHZajxCOnRMUuYTlFwEmsWttf1PotYui1TiBuuTwaTU8zc9jD6JcyX2xgfr2t9m0XP-uW3onH880XGQJ8BQ=="
+}

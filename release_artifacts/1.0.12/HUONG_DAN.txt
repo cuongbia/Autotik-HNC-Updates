@@ -1,0 +1,65 @@
+AUTOTIK HNC — BẢN KHÁCH 1.0.8
+
+KÍCH HOẠT
+1. Chạy Autotik_HNC.exe trên Windows 10/11 64-bit. Nếu tải EXE có số phiên bản, đổi tên thành Autotik_HNC.exe trước khi chạy.
+2. Sao chép mã máy gửi HNC; nhận file giấy phép JSON và bấm Nhập giấy phép một lần.
+3. Giữ bản sao giấy phép để khôi phục khi cần. File chỉ dùng được trên máy đã cấp.
+
+CẬP NHẬT
+App kiểm tra khi khởi động, chỉ thông báo khi có bản mới. Bạn cũng có thể mở menu Cập nhật.
+Khi có thông báo, bấm Cập nhật để app tự tải, xác minh và mở lại. Không cần nhập URL hay bấm tải/cài riêng.
+Nếu đang có tác vụ chạy, dừng tác vụ trước khi cập nhật. Có thể chọn Để sau.
+Dữ liệu và giấy phép giữ tại %LOCALAPPDATA%\Autotik_HNC. Đừng xóa thư mục này khi thay EXE.
+Bản sao lưu database, cấu hình và giấy phép nằm trong thư mục updates bên trong thư mục dữ liệu.
+Giấy phép offline đã cấp không bị dừng từ xa khi key quản trị bị thu hồi.
+
+YÊU CẦU
+GPM Login phải cài và mở; tài khoản GPM, proxy và API AI do khách tự cấu hình.
+Microsoft Edge cần có cho các tác vụ quét/kiểm tra ngầm. Bộ Tử Vi AI cần cài riêng.
+Bản khách không có Telegram, Kick Stu hoặc công cụ quản trị license.
+
+Từ bản 1.0.5, EXE dự phòng được giữ trong %LOCALAPPDATA%\Autotik_HNC\updates\<mã-bản-tải>\Autotik_HNC.previous.exe.
+Bản dự phòng cạnh EXE do phiên bản cũ tạo được chuyển vào updates\legacy-backups khi app mở thành công.
+
+TÍNH NĂNG BẢN 1.0.5
+- Chạy lại hàng loạt: chọn các nick lỗi rồi bấm nút trên thanh tài khoản. Nếu chưa chọn, xử lý các nick lỗi đang hiển thị. Bỏ qua nick đang chạy hoặc đã dừng theo yêu cầu.
+- Số video render đồng thời: Kịch Bản & Cài Đặt > Chung. Mặc định 1, chọn từ 1-10 rồi Lưu Cài Đặt Hệ Thống. Tăng số lượng dùng thêm CPU/RAM; giảm không ngắt video đang render.
+- Hiển thị rõ bước đang xử lý, chờ render, chờ proxy/slot hoặc dịch vụ đang dừng; sửa mất chữ ở cột Hoạt động.
+- Không giữ slot GPM trong lúc tải hoặc chờ render; video Tử Vi đã xong được ưu tiên đăng.
+- Đã bỏ toàn bộ giao diện và dịch vụ Telegram khỏi bản khách; cấu hình cũ không khởi động lại bot.
+
+BẢN 1.0.6 — SỬA LỖI KHỞI ĐỘNG
+Sửa app thoát sau khi kích hoạt license do lời gọi Telegram còn sót trong bản 1.0.5.
+Nếu không mở được bản 1.0.5: tải EXE 1.0.6, đổi tên thành Autotik_HNC.exe và thay file EXE cũ; giấy phép và dữ liệu được giữ nguyên. Không xóa %LOCALAPPDATA%\Autotik_HNC và không cần cấp lại license.
+Nếu gặp lỗi khởi động khác, app hiện thông báo và lưu log tại %LOCALAPPDATA%\Autotik_HNC\logs\startup-error.log.
+
+BẢN 1.0.7 — TỰ MỞ GPM
+Sau khi xác nhận license, app kiểm tra Local API GPM. Nếu chưa mở, tự tìm GPMLogin.exe trong C:\Autotik\engine (hoặc thư mục con trực tiếp) rồi mở GPM.
+Nếu GPM đang chạy, app không mở thêm phiên. Chờ API sẵn sàng rồi mới vào giao diện và chạy dịch vụ.
+Không tìm thấy file: bấm Chọn GPMLogin.exe, chọn đúng file GPM đã cài; đường dẫn được lưu cho các lần sau.
+Nếu API chưa hoạt động sau khoảng 90 giây: kiểm tra đăng nhập GPM và bật Local API đúng cổng rồi bấm Thử lại. Không tự thay đổi tài khoản hoặc dữ liệu GPM.
+
+BẢN 1.0.8 — GIAO DIỆN TỰ GỌN TRÊN LAPTOP
+App giữ DPI gốc của Windows và tự chọn độ gọn theo vùng hiển thị thực tế khi mở.
+Màn Full HD ở Scale 150% dùng bố cục gọn hơn: giảm kích thước nút/khoảng cách, chỉnh cỡ chữ; thu gọn sidebar và nhật ký để nhường chỗ cho bảng tài khoản.
+Bấm nút menu để mở sidebar hoặc Mở rộng để xem nhật ký khi cần. Không cần đổi Scale Windows xuống 100%.
+Màn hình có vùng hiển thị lớn giữ bố cục thông thường. Dữ liệu và license không đổi.
+
+
+CAI DAT MAIL / OTP
+Vào Cài đặt > Mail / OTP, nhập API key 1MailAPI rồi bấm Lưu Cài Đặt Hệ Thống.
+Khóa được lưu trên máy khách, giữ lại khi cập nhật.
+Tài khoản có khóa riêng sẽ ưu tiên khóa riêng; để trống để dùng khóa chung trong Cài đặt.
+Không có khóa mail mặc định đóng kèm EXE.
+
+
+POPUP DANG NHAP (1.0.11)
+Bản khách ưu tiên đăng nhập bằng email và thử đóng popup Passkey/Chọn khóa truy cập.
+Hãy dùng API key tại Cài đặt > Mail / OTP. Khi có CAPTCHA hoặc yêu cầu xác minh, xử lý xác minh trong profile.
+
+
+BẢN 1.0.12 — CẬP NHẬT 25/11/2026
+- Quét thông tin tự động 60 phút: có thử lại, tiến độ và Cập nhật ngay.
+- Kênh sao chép: chọn 50 video theo lượt xem, gần nhất, ngẫu nhiên hoặc nhiều tim. Áp dụng cho quét bổ sung; giữ kho cũ.
+- Đổi tên: chỉ dùng ô Tên, giữ nguyên TikTok ID; bỏ qua Tên bị khóa.
+- Tạo hàng loạt: mặc định nối tiếp số lớn nhất, hoặc nhập số bắt đầu và tự bỏ qua số đã dùng.
