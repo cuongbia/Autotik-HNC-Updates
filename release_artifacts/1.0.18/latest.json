@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.18",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.18/Autotik_HNC-1.0.18.exe",
+    "sha256": "98f0c2bd8d716f9e7b97b91b7ab731cd581a5063d6c79bdddc4dbce26d4c5a08",
+    "size": 177367077,
+    "data_schema": 1,
+    "notes": "Sửa đồng bộ proxy Autotik → GPM Global: giữ đúng định dạng và giao thức, đọc lại profile để xác nhận trước khi lưu Autotik. GPM lỗi thì giữ dữ liệu cũ và nội dung nhập, không báo thành công hoặc đóng bảng. Kiểm tra proxy đã đồng bộ trước khi chạy auto. Sau cập nhật, chọn profile cũ → Đổi Proxy → Lưu & cập nhật GPM để đồng bộ lại.",
+    "released_at": "2026-11-26T04:02:52+00:00"
+  },
+  "signature": "oTLUqyOW3iyCxmhBp-j8NTjvaO0VqPdNxGWr36fsxymQGgkWj0iJQ1EoriaVME2qCRxm8rzXGnoFen2KWxIrCQ=="
+}

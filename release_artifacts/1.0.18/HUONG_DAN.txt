@@ -1,0 +1,11 @@
+AUTOTIK HNC 1.0.18 — SỬA ĐỒNG BỘ PROXY GPM
+
+1. Cập nhật Autotik lên 1.0.18. Giữ nguyên dữ liệu, license, GPM và core.
+2. Chọn các profile cũ đang hiện proxy trong Autotik nhưng chưa có proxy trong GPM.
+3. Bấm Đổi Proxy. Giá trị đã lưu trong Autotik được điền sẵn; giữ nguyên hoặc sửa đúng proxy cần dùng.
+4. Bấm Lưu & cập nhật proxy lên GPM. App đọc lại GPM để xác nhận rồi mới báo thành công.
+5. Nếu có dòng lỗi, bảng giữ nguyên nội dung để bạn kiểm tra GPM và bấm Lưu lại. Chỉ profile xác nhận thành công mới được tính đã lưu.
+6. Khi đồng bộ xong, chạy lại Auto Login/Nuôi Nick trên một profile trước.
+7. Nếu vẫn báo ProxyCheckFailed sau khi GPM đã có đúng proxy, kiểm tra kết nối và giao thức HTTP/SOCKS5 trong GPM. App không tự bỏ proxy.
+
+Thay thủ công nếu cần: đóng Autotik, tải EXE 1.0.18, đổi tên thành Autotik_HNC.exe và thay EXE cũ. Không xóa thư mục dữ liệu/license.
