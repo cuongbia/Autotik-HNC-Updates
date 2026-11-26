@@ -1,0 +1,55 @@
+name: Publish Autotik HNC 1.0.13
+'on':
+  push:
+    branches: [main]
+    paths:
+      - 'release_artifacts/1.0.13/**'
+      - '.github/workflows/publish-hnc-1.0.13.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release-hnc-1.0.13
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download verified existing runtime
+        run: |
+          New-Item -ItemType Directory -Path staging -Force | Out-Null
+          gh release download v1.0.12 --pattern Autotik_HNC-1.0.12.exe --dir staging
+          if ($LASTEXITCODE -ne 0) { throw 'Baseline download failed' }
+      - name: Reconstruct exact tested executable
+        run: |
+          python release_artifacts/1.0.13/rebuild.py apply staging/Autotik_HNC-1.0.12.exe release_artifacts/1.0.13/delta.zip staging/Autotik_HNC-1.0.13.exe
+          if ($LASTEXITCODE -ne 0) { throw 'Release reconstruction failed' }
+          $manifest = Get-Content release_artifacts/1.0.13/latest.json -Raw | ConvertFrom-Json
+          $actual = (Get-FileHash staging/Autotik_HNC-1.0.13.exe -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actual -ne $manifest.payload.sha256) { throw 'Signed manifest hash mismatch' }
+          if ((Get-Item staging/Autotik_HNC-1.0.13.exe).Length -ne $manifest.payload.size) { throw 'Signed manifest size mismatch' }
+          if ($manifest.payload.version -ne '1.0.13') { throw 'Incorrect version' }
+      - name: Upload all assets before publishing
+        run: |
+          $existing = gh release view v1.0.13 --json isDraft 2>$null
+          if ($LASTEXITCODE -eq 0) {
+            if (-not ($existing | ConvertFrom-Json).isDraft) { throw 'Version already public; refusing to replace it' }
+          } else {
+            gh release create v1.0.13 --draft --title 'Autotik HNC 1.0.13' --notes-file release_artifacts/1.0.13/RELEASE_NOTES.md
+            if ($LASTEXITCODE -ne 0) { throw 'Draft creation failed' }
+          }
+          gh release upload v1.0.13 staging/Autotik_HNC-1.0.13.exe release_artifacts/1.0.13/latest.json release_artifacts/1.0.13/HUONG_DAN.txt --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'Asset upload failed; release remains a draft' }
+          gh release edit v1.0.13 --draft=false --latest
+          if ($LASTEXITCODE -ne 0) { throw 'Release publication failed' }

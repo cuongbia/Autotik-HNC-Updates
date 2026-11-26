@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.13",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.13/Autotik_HNC-1.0.13.exe",
+    "sha256": "a58385a989ab25285a3c49b1d3a775fab0b0c388197b770ccfa265532a3e760b",
+    "size": 177340238,
+    "data_schema": 1,
+    "notes": "Sửa môi trường mở GPM từ EXE đóng gói, khôi phục đường dẫn DLL sau khi mở. Nhận diện GPMLoginGlobal.exe và báo rõ API Global chưa được hỗ trợ; bản hiện tại vẫn yêu cầu GPM Legacy API v3. Báo lỗi sớm nếu GPM tự thoát. Giữ dữ liệu và license.",
+    "released_at": "2026-11-26T02:25:22+00:00"
+  },
+  "signature": "eFVvQCDqBvLSqFn9YmIaL1jUCANRHE7G8mqEkl8nwolJ8RAb5S8tKrDvMHUSNzJDtiAJM1r84OgBBmhwei8hAA=="
+}
