@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.16",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.16/Autotik_HNC-1.0.16.exe",
+    "sha256": "0a13fed260605540ea931ad12b54c143c9508b771836b8e436ba7c8d761835b6",
+    "size": 177358249,
+    "data_schema": 1,
+    "notes": "Sửa nhận diện Chrome core của GPM Global tại %APPDATA%/GPMLoginGlobal/Browsers/ChromiumCore_*. Random dùng core đã tải trong AppData kể cả khi GPM chưa có profile. Tự dùng thư mục người dùng Windows hiện tại, đọc phiên bản đầy đủ từ file trình duyệt; giữ dữ liệu, license và cơ chế tránh tạo trùng.",
+    "released_at": "2026-11-26T03:26:34+00:00"
+  },
+  "signature": "nGsC-RtcOWnKys2AKFlGCrnXKjL7DAZLeh3qem3y6gE5myK4eJ_uZBHuf-R-Y12Aqg1Huh88ZUCMtq5ZIr-4Dw=="
+}

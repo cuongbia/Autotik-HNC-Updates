@@ -1,0 +1,11 @@
+AUTOTIK HNC 1.0.16
+
+1. Trong Autotik chọn Cập nhật để cài 1.0.16. Giữ nguyên dữ liệu và license.
+2. Nếu thay thủ công: đóng Autotik, tải Autotik_HNC-1.0.16.exe, đổi tên thành Autotik_HNC.exe và thay EXE cũ.
+3. Mở GPM Global, đăng nhập và bật Local API.
+4. Giữ core tại thư mục hiện tại: %APPDATA%\GPMLoginGlobal\Browsers\ChromiumCore_v157. Không chép core vào engine.
+5. Khi tạo profile trong Autotik, chọn Chrome = Random. App đọc phiên bản từ chrome.exe trong kho AppData.
+6. Với API trên máy khác, chọn chính xác phiên bản Chrome đã cài trên máy GPM.
+7. Nếu timeout sau khi tạo, kiểm tra profile trong GPM trước khi tạo lại để tránh trùng.
+
+Đã kiểm thử tự động và khởi động EXE; cần kiểm chứng tác vụ thật trên GPM Global của khách.
