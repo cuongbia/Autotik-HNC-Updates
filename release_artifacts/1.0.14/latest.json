@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.14",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.14/Autotik_HNC-1.0.14.exe",
+    "sha256": "a5f4ffb72f3812ee29a99691975c4b0714e7ad8cc7f8e96b1f265dcd0bfb0808",
+    "size": 177350661,
+    "data_schema": 1,
+    "notes": "Hỗ trợ GPM Global API v1 và giữ GPM Legacy API v3. Tự nhận diện hai cổng mặc định 19995/9495; có ô nhập Local API khi dùng cổng khác. Chuyển đổi đúng phân trang, profile, nhóm, proxy, lệnh mở/đóng và địa chỉ CDP; giữ xếp cửa sổ và giới hạn slot. Không đổi dữ liệu hoặc license Autotik. Không tự chuyển profile giữa hai bộ GPM.",
+    "released_at": "2026-11-26T02:43:45+00:00"
+  },
+  "signature": "fbbLtgf4j2NLOTImaT3BQDoMqv4msNmbDrqDOVJmxD4V_qKh8016jENRnsc-JQBnGvMldTbt1_YIZFfUzggADA=="
+}

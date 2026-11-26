@@ -1,0 +1,12 @@
+AUTOTIK HNC 1.0.14 — GPM GLOBAL / LEGACY
+
+1. Nếu app mở được: vào Cập nhật và cài bản mới.
+2. Nếu bản 1.0.13 dừng ở màn hình GPM: đóng Autotik, tải Autotik_HNC-1.0.14.exe, đổi tên thành Autotik_HNC.exe và thay file EXE cũ.
+3. Giữ nguyên %LOCALAPPDATA%\Autotik_HNC để giữ dữ liệu và license. Không cần xóa app hay cấp lại license.
+4. Giữ nguyên bộ GPM đã cài tại C:\Autotik\engine; không đổi tên GPMLoginGlobal.exe thành GPMLogin.exe, không ghép DLL.
+5. Mở GPM, đăng nhập, bật Local API. Autotik tự nhận diện v1/v3 tại URL đã lưu và cổng mặc định còn lại 19995/9495 trên máy này.
+6. Nếu cổng khác: bấm Địa chỉ Local API trong màn hình khởi động; dán URL từ Cài đặt GPM → Local API rồi thử lại.
+7. Tạo profile Global: chọn phiên bản Chrome đã cài trong GPM. Random dùng core từ profile Chrome hiện có; nếu chưa có hãy chọn phiên bản cụ thể.
+8. Không tự chuyển profile/dữ liệu trình duyệt giữa Legacy và Global. Dữ liệu Autotik vẫn giữ nguyên; mỗi bộ GPM quản lý các ID profile của riêng nó.
+
+Kiểm tra trước phát hành: 30 ca GPM và 18 ca thông tin/chọn video đạt; EXE mở được với Legacy và API Global mô phỏng chỉ đọc. Cần kiểm tra profile thật trên Global của khách.
