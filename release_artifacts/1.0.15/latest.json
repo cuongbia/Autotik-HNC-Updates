@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.15",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.15/Autotik_HNC-1.0.15.exe",
+    "sha256": "a1b33a89d5b19f9a0b3a619cb53c5b32cc64fc9b09879813eeba72797a009436",
+    "size": 177357577,
+    "data_schema": 1,
+    "notes": "Sửa tạo profile đầu tiên trên GPM Global: Random tự đọc Chrome core đã cài từ bộ GPM đang chạy, không cần profile Chrome có sẵn. Kiểm tra core trước khi tạo nhóm/profile; chặn phiên bản chọn tay chưa cài khi đã nhận diện được kho core. Giữ API Legacy/Global, dữ liệu và license. Không tự gửi lại lệnh tạo khi timeout.",
+    "released_at": "2026-11-26T03:03:00+00:00"
+  },
+  "signature": "Jdk-mG_SOQz6aSN_iLCBVzri1XcLPktCuRJh9nAgy5irys5h7lHhnc1F9zd-uQ79LN27aZKpVPv_cIl3IAzjCg=="
+}

@@ -1,0 +1,11 @@
+AUTOTIK HNC 1.0.15
+
+1. Trong app chọn Cập nhật để cài bản mới. Giữ nguyên dữ liệu và license.
+2. Nếu thay thủ công: đóng Autotik, tải Autotik_HNC-1.0.15.exe, đổi tên thành Autotik_HNC.exe và thay EXE cũ.
+3. Mở GPM Global, đăng nhập và bật Local API. Đường dẫn GPM trong Autotik cần trỏ đúng GPMLoginGlobal.exe hoặc thư mục cài GPM.
+4. Khi tạo profile, chọn Chrome = Random. App tự đọc Chrome core đã cài, kể cả khi chưa có profile nào.
+5. Nếu bộ GPM chưa tải Chrome, tải core trong trình quản lý trình duyệt của GPM rồi thử lại. Autotik không tự cài hoặc thay bộ GPM.
+6. Với API trên máy khác, chọn chính xác phiên bản Chrome đã cài trên máy GPM. Không lấy core trên máy Autotik cho API từ xa.
+7. Nếu báo timeout sau khi tạo: kiểm tra profile trong GPM trước khi tạo lại. Các profile đã tạo thành công được giữ.
+
+Giới hạn kiểm chứng: đã qua kiểm thử tự động và khởi động EXE; cần kiểm chứng tác vụ thật trên bản GPM Global của khách.
