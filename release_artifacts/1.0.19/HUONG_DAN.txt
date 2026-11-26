@@ -1,0 +1,10 @@
+AUTOTIK HNC 1.0.19 — SỬA KẸT HÀNG ĐỢI ĐĂNG VIDEO
+
+1. Dừng các tác vụ và chờ kết thúc; cập nhật lên 1.0.19 rồi đóng/mở lại app. Không xóa dữ liệu hoặc license.
+2. Với profile cũ có proxy trong Autotik nhưng GPM chưa có: chọn profile → Đổi Proxy → Lưu & cập nhật GPM. Chờ đọc lại GPM xác nhận thành công.
+3. Chọn tài khoản cần chạy và bấm Chạy. Lỗi proxy/GPM trước khi bấm Đăng sẽ giữ video đã render để thử lại sau 15 phút.
+4. Nếu còn thông báo UPLOADING/cần xác minh: kiểm tra video trên TikTok Studio trước khi yêu cầu đăng lại. Không xóa lịch sử hoặc reset hàng loạt bài chưa rõ kết quả. Gửi nhật ký và ID video bị giữ để xử lý đúng bài.
+5. Kiểm tra số video/ngày và khoảng cách giữa lần đăng. Bản cập nhật giữ cấu hình hiện tại, không tự tăng tần suất.
+6. Nếu vẫn chậm, gửi 20–30 dòng log quanh video bị kẹt, số tài khoản chạy, giới hạn GPM/render và cấu hình lịch.
+
+Thay EXE thủ công: đóng app, tải Autotik_HNC-1.0.19.exe, đổi tên thành Autotik_HNC.exe rồi thay EXE cũ. Giữ nguyên các thư mục dữ liệu/license và GPM.

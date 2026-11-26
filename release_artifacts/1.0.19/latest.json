@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.19",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.19/Autotik_HNC-1.0.19.exe",
+    "sha256": "54f15ad1e8275b5c8dfac045f3aa35841a38ce5fa95749d77836171959a2eb9d",
+    "size": 177374069,
+    "data_schema": 1,
+    "notes": "Sửa kẹt hàng đợi sau lỗi proxy/GPM trước khi bấm Đăng: giữ video đã render và thử lại đúng bước. Giới hạn chờ đăng 15 phút, dừng FFmpeg khi 5 phút không tiến triển. Giữ bài chưa rõ kết quả để xác minh, bảo toàn lịch đăng và dữ liệu/license.",
+    "released_at": "2026-11-26T18:23:49+00:00"
+  },
+  "signature": "lYXNpcBmSH9IyC_DZeajalNMZA9OMR4gKE473GuOA-t61OnBFQyLv2DTtUm67on9QPfbWY0kscU01daceHC-Bw=="
+}
