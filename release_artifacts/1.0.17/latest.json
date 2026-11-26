@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.17",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.17/Autotik_HNC-1.0.17.exe",
+    "sha256": "997c45603ff0423b646d58966a9b23ecc4b5e8b04273e49d8c9f76fccc63b730",
+    "size": 177359461,
+    "data_schema": 1,
+    "notes": "Bổ sung chẩn đoán lỗi GPM Global: hiển thị lý do GPM từ chối mở profile thay cho thông báo chung HTTP 200; phân biệt thao tác mở/dừng/tạo/cập nhật profile. Che thông tin đăng nhập/proxy trong thông báo. Đây là bản chẩn đoán, chưa xác nhận sửa được lỗi mở profile thật trên máy khách. Giữ dữ liệu và license.",
+    "released_at": "2026-11-26T03:39:15+00:00"
+  },
+  "signature": "zNhI_-VvIGgGRSYSYFrKkGiiEdtUGgYZYMGSxOK4j_025onkiVADNBzc4nGLd-iJUy3YCLMmimv7qKEukGrRDQ=="
+}

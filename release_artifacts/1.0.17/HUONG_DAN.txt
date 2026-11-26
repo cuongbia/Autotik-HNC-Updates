@@ -1,0 +1,7 @@
+AUTOTIK HNC 1.0.17 — CHẨN ĐOÁN LỖI MỞ PROFILE
+
+1. Cập nhật trong app. Hoặc đóng Autotik, tải EXE 1.0.17, đổi tên thành Autotik_HNC.exe rồi thay EXE cũ.
+2. Giữ nguyên thư mục dữ liệu, license, GPM và core trình duyệt.
+3. Mở GPM Global, đăng nhập và bật Local API.
+4. Thử chạy auto trên một profile đang lỗi. Thông báo mới sẽ chứa đúng thao tác và lý do GPM từ chối, nếu GPM cung cấp.
+5. Gửi nội dung lỗi chi tiết mới để tiếp tục xử lý. Bản này bổ sung chẩn đoán, chưa xác nhận sửa được lỗi mở profile trên máy khách.
