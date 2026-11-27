@@ -1,0 +1,10 @@
+AUTOTIK HNC 1.0.21 — SỬA ĐỨNG "CHỜ XÁC MINH", BỎ CHẶN KÊNH NGOÀI VIỆT NAM
+
+1. Dừng các tác vụ và chờ kết thúc; cập nhật lên 1.0.21 rồi đóng/mở lại app. Không xóa dữ liệu hoặc license.
+2. Chọn tài khoản và bấm Chạy. Khoảng 1 phút sau, app tự đọc kênh TikTok để xác minh các video kẹt (kể cả từ bản cũ), sau đó lặp lại mỗi 10 phút. Nick được chạy lại ngay khi xác minh xong.
+3. Muốn xử lý ngay: Trung tâm sao chép → "Video chờ xác minh" → "Tự kiểm tra ngay". Dòng ghi "Cần xác nhận tay": bấm "Mở kênh" để xem trên TikTok rồi chọn "Đã đăng" hoặc "Chưa đăng — đưa lại hàng chờ".
+4. Video chưa lên kênh chỉ được đưa lại hàng chờ sau 6 giờ kể từ lần thử, để tránh đăng trùng khi TikTok xử lý chậm.
+5. Kênh sao chép không còn bắt buộc là kênh Việt Nam.
+6. Nếu vẫn đứng, gửi 20–30 dòng log, tên nick và ảnh màn hình "Video chờ xác minh".
+
+Thay EXE thủ công: đóng app, tải Autotik_HNC-1.0.21.exe, đổi tên thành Autotik_HNC.exe rồi thay EXE cũ. Giữ nguyên các thư mục dữ liệu/license và GPM.
