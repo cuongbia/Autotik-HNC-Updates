@@ -1,0 +1,15 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "update",
+    "product": "Autotik_HNC",
+    "version": "1.0.21",
+    "url": "https://github.com/cuongbia/Autotik-HNC-Updates/releases/download/v1.0.21/Autotik_HNC-1.0.21.exe",
+    "sha256": "74d403e75ce84edf18d33b7f5b685afa16a2250c62fc4ad2bda93ddd9e5dd16e",
+    "size": 177397054,
+    "data_schema": 1,
+    "notes": "Sửa treo \"Có video đã bấm Đăng chưa rõ kết quả\": nick chờ xác minh không còn giữ proxy của nick khác; app tự xác minh cả video kẹt từ bản cũ theo thời điểm video trên kênh. Bỏ chặn kênh sao chép không phải Việt Nam. Giữ dữ liệu/license và lịch đăng.",
+    "released_at": "2026-11-27T03:09:11+00:00"
+  },
+  "signature": "IvIOjQCwCav8Gpkk8HSazqJWw4KMZFBMCaUmHWxHNUu0f-uZUCj_chvfD0sSxq_7XWgIVUUA8MmwWW7idUBhBQ=="
+}
