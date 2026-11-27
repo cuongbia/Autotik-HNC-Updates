@@ -1,0 +1,10 @@
+AUTOTIK HNC 1.0.20 — ĐĂNG NHANH HƠN, GỠ KẸT CHỜ XÁC MINH
+
+1. Dừng các tác vụ và chờ kết thúc; cập nhật lên 1.0.20 rồi đóng/mở lại app. Không xóa dữ liệu hoặc license.
+2. Vào Trung tâm sao chép → bấm "Video chờ xác minh". Với các dòng "Cần xác nhận tay": bấm "Mở kênh" để xem trên TikTok, rồi chọn "Đã đăng" hoặc "Chưa đăng — đưa lại hàng chờ". Nick được chạy lại ngay khi hết video chờ xác minh.
+3. Các video mới từ bản này được app tự xác minh mỗi 10 phút khi đang chạy điều phối; không cần làm tay.
+4. Bấm Lưu chỉ lưu cấu hình. Muốn bắt đầu đăng: chọn tài khoản và bấm "Chạy lịch đã lưu", hoặc trong cấu hình từng nick bấm "Lưu và chạy lịch".
+5. Tốc độ render theo "số luồng render" trong Cài đặt; mỗi render dùng lõi CPU riêng. Bản cập nhật không tự tăng số video/ngày.
+6. Nếu vẫn chậm, gửi 20–30 dòng log quanh video bị kẹt, số tài khoản chạy, giới hạn GPM/render và cấu hình lịch.
+
+Thay EXE thủ công: đóng app, tải Autotik_HNC-1.0.20.exe, đổi tên thành Autotik_HNC.exe rồi thay EXE cũ. Giữ nguyên các thư mục dữ liệu/license và GPM.
